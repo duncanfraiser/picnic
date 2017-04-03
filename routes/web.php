@@ -22,6 +22,13 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('attend','AttendController');
 Route::get('attending/{attend}/thanks', 'AttendController@thanks');
+Route::resource('child','KidController');
 
 Route::resource('carshow','CarshowController');
-Route::get('carshow/{attend}/thanks', 'CarshowController@thanks');
+Route::get('carshow/{carshow}/thanks', 'CarshowController@thanks');
+
+Route::resource('carshow_guest','CarguestController');
+Route::get('carshow_guest/{carguest}/thanks', 'CarguestController@thanks');
+
+Route::resource('invitee','InviteeController');
+Route::get('invitee/{invitee}/thanks', 'InviteeController@thanks');

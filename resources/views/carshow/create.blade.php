@@ -6,7 +6,7 @@
     <center><h1>Car Show Registration</h1></center>
 	<div class="col-md-8 col-md-offset-2" style="margin-bottom: 3em">
 	  {{Form::open(['action' => 'CarshowController@store'])}}
-	  <h3>Employee's Infromation</h3>
+	  <h3>Employee's Information</h3>
 	    <div class="form-group">
    	      @if($errors->has('first_name'))	
 	        {{Form::label('first_name', "Please Enter Employee's First Name", ['class' => 'errs'])}}<br/>
@@ -21,7 +21,6 @@
 	        {{Form::text('last_name', null, ['class' => 'form-control', 'placeholder' => "Employee's Last Name"])}}
 	      @endif
 	      {{Form::text('email', null, ['class' => 'form-control', 'placeholder' => "Employee's Email Address"])}}
-      
         </div>
 	  <h3>Vehicle Information</h3>
 	    <div class="form-group">
@@ -37,28 +36,24 @@
 	      @else
 	        {{Form::text('year', null, ['class' => 'form-control', 'placeholder' => "Vehicle Year"])}}
 	      @endif
-
    	      @if($errors->has('year'))	
 	        {{Form::label('make', "Please Enter Vehicle Make", ['class' => 'errs'])}}<br/>
 	        {{Form::text('make', null, ['class' => 'redform-control', 'placeholder' => "Vehicle Make"])}} 
 	      @else
 	    {{Form::text('make', null, ['class' => 'form-control', 'placeholder' => "Vehicle Make"])}}
 	      @endif
-
    	      @if($errors->has('year'))	
 	        {{Form::label('model', "Please Enter Vehicle Model", ['class' => 'errs'])}}<br/>
 	        {{Form::text('model', null, ['class' => 'redform-control', 'placeholder' => "Vehicle Model"])}} 
 	      @else
 	    {{Form::text('model', null, ['class' => 'form-control', 'placeholder' => "Vehicle Model"])}}
 	      @endif	      
-
-
 	    </div>
         <div class="form-group" style="float: right">
-          {{Form::submit('Submit', ['class' => 'wrfbtn'])}}
+          {{Form::submit('Submit', ['class' => 'ybfbtn'])}}
         </div>
       {{Form::close()}}
-      <a style="float: right" href="{{'/'}}"><BUTTON class="wrfbtn">Cancel</BUTTON></a>
+      {{-- <a style="float: right" href="{{'/'}}"><BUTTON class="ybfbtn">Cancel</BUTTON></a> --}}
     </div>
   </div>
 </div>

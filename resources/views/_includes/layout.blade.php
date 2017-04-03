@@ -11,8 +11,11 @@
 
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-    
-        <script src="{{ asset('/js/jquery-3.1.1.min.js') }}"></script>
+
+        <script src="https://use.fontawesome.com/b65a938b7e.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+        {{-- <script src="{{ asset('/js/jquery-3.1.1.min.js') }}"></script> --}}
         <script src="{{ asset('/js/bootstrap.js') }}"></script>
 
     </head>
@@ -24,4 +27,6 @@
           <p>Copyright © 2017 Ergon, Inc. All Rights Reserved.</p>
         </div> --}}
     </body>
+
+    @yield('scripts')
 </html>
