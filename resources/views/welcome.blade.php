@@ -17,7 +17,7 @@
 {{--                     <img width= '100%' src="{{url('img/ergonpicnic2017.png')}}"> --}}
                   <picture>
                     <source media="(max-width: 770px)" srcset="{{url('img/ErgonPicnic2017mobile.png')}}" width="100%">
-                    <img src="{{url('img/ergonpicnic2017.png')}}"  width="100%" alt="Ergon Marine Industrial Supply">
+                    <img src="{{url('img/ErgonPicnic2017.png')}}"  width="100%">
                   </picture>
                 </div>                
               </div>
