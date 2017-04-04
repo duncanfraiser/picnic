@@ -29,13 +29,13 @@
 
 
                   <div class="col-md-4">
-                   <a href="{{url('attend/create')}}"><button style="margin-bottom: 1em" class="ybbtn">Picnic Registration</button></a>
+                   <a href="{{url('attend/create')}}"><button style="margin-bottom: 1em" class="ybbtn">Ergon Family Picnic Registration</button></a>
                   </div>
                   <div class="col-md-4">
-                       <a href="{{url('carshow/create')}}"><button style="margin-bottom: 1em" class="ybbtn">Car Show Registration</button></a>           
+                       <a href="{{url('carshow/create')}}"><button style="margin-bottom: 1em" class="ybbtn">Classic Car Show Registration</button></a>           
                   </div>
                   <div class="col-md-4">
-                       <a href="{{url('invitee/create')}}"><button style="margin-bottom: 1em" class="ybbtn">Invite a Friend to Car Show</button></a>           
+                       <a href="{{url('invitee/create')}}"><button style="margin-bottom: 1em" class="ybbtn">Invite a Friend to Classic Car Show</button></a>           
                   </div>
                 
 
