@@ -3,8 +3,10 @@
 <div class="container">
   <div class="col-md-8 col-md-offset-2">
     <img width="100%" src="{{url('img/carshow.jpg')}}">
-    <center><h1>Car Show Invite</h1></center>
-	<div class="col-md-8 col-md-offset-2" style="margin-bottom: 3em">
+    <center><h1>Classic Car Show Invite </h1></center>
+    <center><h1 style="color:red">Registration Opens April 12, 2017</h1></center>
+    	 <br/><center><a href="{{url('/')}}"><BUTTON class="ybfbtn">Home</BUTTON></a></center>
+	{{-- <div class="col-md-8 col-md-offset-2" style="margin-bottom: 3em">
 	  {{Form::open(['action' => 'InviteeController@store'])}}
 	    <div class="form-group">
 

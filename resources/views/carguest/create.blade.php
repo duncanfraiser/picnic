@@ -5,7 +5,8 @@
   <div class="col-md-8 col-md-offset-2">
     <img width="100%" src="{{url('img/carshow.jpg')}}">
     <center><h1>Classic Car Show Guest Registration</h1></center>
-    <div class="col-md-8 col-md-offset-2">
+    <center><h1 style="color:red">Registration Opens April 12, 2017</h1></center>
+    {{-- <div class="col-md-8 col-md-offset-2">
     <p><center><strong>Ergon's Classic Car, Truck, Motorcycle & Tractor Show<br/> Saturday, May 20, 2017<br/>9 – 11 a.m.<br/><br/>Setup begins at 9 a.m. and winners will be announced at 11 a.m.</strong></center></p></div>
 	  <div class="col-md-8 col-md-offset-2" style="margin-bottom: 3em">
 	    {{Form::open(['action' => 'CarguestController@store'])}}
@@ -71,7 +72,7 @@
       <div class="form-group" style="float: right; margin-top: 5em">
         {{Form::submit('Submit', ['value'=>'bar', 'class' => 'ybfbtn'])}}
       </div>
-      {{Form::close()}}
+      {{Form::close()}} --}}
     </div>
   </div>
 </div>

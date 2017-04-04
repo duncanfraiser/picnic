@@ -35,7 +35,7 @@
                        <a href="{{url('carshow/create')}}"><button style="margin-bottom: 1em" class="ybbtn">Classic Car Show Registration</button></a>           
                   </div>
                   <div class="col-md-4">
-                       <a href="{{url('invitee/create')}}"><button style="margin-bottom: 1em" class="ybbtn">Invite a Friend to Classic Car Show</button></a>           
+                       <a href="{{url('invitee/create')}}"><button style="margin-bottom: 1em" class="ybbtn">Invite a Friend to the Classic Car Show</button></a>           
                   </div>
                 
 
