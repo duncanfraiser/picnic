@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Invitee;
+use App\Mail\Invitation;
 
 class InviteeController extends Controller
 {
@@ -35,6 +36,8 @@ class InviteeController extends Controller
      */
     public function store(Request $request)
     {
+
+
         $this->validate($request,[
             'invitee_email' => 'required',
             'employee_email' => 'required'
@@ -42,8 +45,16 @@ class InviteeController extends Controller
 
         $invitee = new Invitee;
         $invitee->fill($request->all());
-        $invitee->save();
+   
         
+        if($invitee->save()){
+            
+             \Mail::to($invitee->invitee_email)->send(new Invitation($invitee));
+   
+
+        }
+
+
         return redirect('/invitee/'.$invitee->id.'/thanks'); 
     }
 

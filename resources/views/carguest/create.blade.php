@@ -25,7 +25,7 @@
             {{Form::label('email', "Please Enter Email Address", ['class' => 'errs'])}}<br/>
             {{Form::text('email', null, ['class' => 'redform-control', 'placeholder' => "Email"])}} 
           @else
-            {{Form::text('last_name', null, ['class' => 'form-control', 'placeholder' => "Email"])}}
+            {{Form::text('email', null, ['class' => 'form-control', 'placeholder' => "Email"])}}
           @endif
 	      </div>
     	<h3>Spouse/Guest's Information</h3>

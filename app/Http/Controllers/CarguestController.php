@@ -43,6 +43,7 @@ class CarguestController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->email);
         $this->validate($request,[
             'first_name' => 'required',
             'last_name' => 'required',
@@ -61,6 +62,7 @@ class CarguestController extends Controller
         if($names[0]!= null){
           $ages = $request->kidAges;
           $datas = array_combine($names, $ages);
+          dd($datas);
         foreach($datas as $name=>$age){ // Loop though one array
            $carkid = New Carkid;
            $carkid->carguest_id = $carguest->id;
