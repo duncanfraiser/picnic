@@ -3,7 +3,7 @@
 <div class="container">
   <div class="col-md-8 col-md-offset-2">
     <img width="100%" src="{{url('img/carshow.jpg')}}">
-    <center><h1>Car Show Invite a Friend</h1></center>
+    <center><h1>Car Show Invite</h1></center>
 	<div class="col-md-8 col-md-offset-2" style="margin-bottom: 3em">
 	  {{Form::open(['action' => 'InviteeController@store'])}}
 	    <div class="form-group">
