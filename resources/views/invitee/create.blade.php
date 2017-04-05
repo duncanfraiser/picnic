@@ -15,14 +15,14 @@
 	        {{Form::label('invitee_email', "Please Enter Invitee Email Address", ['class' => 'errs'])}}<br/>
 	        {{Form::text('invitee_email', null, ['class' => 'redform-control', 'placeholder' => "Please Enter Invitee Email Address"])}} 
 	      @else
-			<h3>Invitee's Email Address</h3>
+	        {{Form::label('invitee_email', "Invitee Email Address")}}<br/>
 	        {{Form::text('invitee_email', null, ['class' => 'form-control', 'placeholder' => "Please Enter Invitee Email Address"])}}
 	      @endif
 	      @if($errors->has('employee_email'))	
 	        {{Form::label('employee_email', "Please Enter Employee Email Address", ['class' => 'errs'])}}<br/>
 	        {{Form::text('employee_email', null, ['class' => 'redform-control', 'placeholder' => "Please Enter Employee Email Address"])}} 
 	      @else
-			<h3>Employee's Email Address</h3>
+	        {{Form::label('employee_email', "Employee Email Address")}}<br/>
 	        {{Form::text('employee_email', null, ['class' => 'form-control', 'placeholder' => "Please Enter Employee Email Address"])}} 
 	      @endif
 	    </div>
