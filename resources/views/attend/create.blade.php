@@ -5,6 +5,7 @@
   <div class="col-md-8 col-md-offset-2">
     <img width="100%" src="{{url('img/picnic.jpg')}}">
     <center><h1>Picnic Registration</h1></center>
+     <br/><center><a href="{{url('/')}}"><BUTTON class="ybfbtn">Home</BUTTON></a></center>
 	  <div class="col-md-10 col-md-offset-1" style="margin-bottom: 3em">
 	    {{Form::open(['action' => 'AttendController@store'])}}
 	      <h3>Employee's Information</h3>
