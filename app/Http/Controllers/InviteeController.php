@@ -51,7 +51,7 @@ class InviteeController extends Controller
         
         if($invitee->save()){
             
-             // \Mail::to($invitee->invitee_email)->send(new Invitation($invitee));
+             \Mail::to($invitee->invitee_email)->send(new Invitation($invitee));
    
 
         }
