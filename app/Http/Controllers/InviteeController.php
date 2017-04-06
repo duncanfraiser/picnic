@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Invitee;
-use App\Mail\Invitation;
+use App\Mail\invitation;
 
 class InviteeController extends Controller
 {
