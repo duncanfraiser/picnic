@@ -7,7 +7,7 @@
     <center><h1>Classic Car Show Guest Registration</h1></center>
     {{-- <center><h1 style="color:red">Registration Opens April 12, 2017</h1></center> --}}
     <div class="col-md-8 col-md-offset-2">
-    <p><center><strong>Ergon's Classic Car, Truck, Motorcycle & Tractor Show<br/> Saturday, May 20, 2017<br/>9 – 11 a.m.<br/><br/>Setup begins at 9 a.m. and winners will be announced at 11 a.m.</strong></center></p></div>
+    <p><center><strong>Cars, Trucks, Motorcycles & Tractors Welcome<br/> Saturday, May 20, 2017<br/>9 – 11 a.m.<br/><br/>Setup begins at 9 a.m. & voting closes at 11 a.m. <br/>WINNERS will be announced at 1 p.m.</strong></center></p></div>
 	  <div class="col-md-8 col-md-offset-2" style="margin-bottom: 3em">
 	    {{Form::open(['action' => 'CarguestController@store'])}}
 	      <h3>Entrant's Information</h3>
