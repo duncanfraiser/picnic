@@ -9,7 +9,9 @@ class Invitee extends Model
 {
       use SoftDeletes;
       protected $fillable = [
+   			'invitee_name',
    			'invitee_email',
+            'employee_name',
             'employee_email'
 
         ];

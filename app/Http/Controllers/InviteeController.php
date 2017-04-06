@@ -39,7 +39,9 @@ class InviteeController extends Controller
 
 
         $this->validate($request,[
+            'invitee_name' => 'required',
             'invitee_email' => 'required',
+            'employee_name' => 'required',
             'employee_email' => 'required'
         ]);
 

@@ -36,12 +36,12 @@
 	      {{Form::text('guest_first_name', null, ['class' => 'form-control', 'placeholder' => "First Name"])}} 
 	      {{Form::text('guest_last_name', null, ['class' => 'form-control', 'placeholder' => "Last Name"])}}
       </div>
-     	<div class="form-group input_fields_wrap">
-    	  <h3>Children's Information </h3>
-  			<input class="form-control" placeholder="Child&#39;s Name" type="text" name="kidNames[]"/>
-				<input class="form-control" placeholder="Child&#39;s Age" type="text" name="kidAges[]"/>
-		    <i class="fa fa-plus-circle fa-2x add_field_button" aria-hidden="true"></i>
-			</div>
+      <div class="form-group input_fields_wrap">
+        <h3>Children's Information </h3>
+        <input class="form-control" placeholder="Child&#39;s Name" type="text" name="kidNames[]"/>
+        <input class="form-control" placeholder="Child&#39;s Age" type="text" name="kidAges[]"/>
+        <i class="fa fa-plus-circle fa-2x add_field_button" aria-hidden="true"></i>
+      </div>
           <h3>Vehicle Information</h3>
       <div class="form-group">
         @if($errors->has('type')) 

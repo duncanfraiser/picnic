@@ -5,24 +5,38 @@
     <img width="100%" src="{{url('img/carshow.jpg')}}">
     <center><h1>Classic Car Show Invite </h1></center>
     {{-- <center><h1 style="color:red">Registration Opens April 12, 2017</h1></center> --}}
-    	 <br/><center><a href="{{url('/')}}"><BUTTON class="ybfbtn">Home</BUTTON></a></center>
-	<div class="col-md-8 col-md-offset-2" style="margin-bottom: 3em">
-    <p><center><strong>Ergon's Classic Car, Truck, Motorcycle & Tractor Show<br/> Saturday, May 20, 2017<br/>9 – 11 a.m.<br/><br/>Setup begins at 9 a.m. and winners will be announced at 11 a.m.</strong></center></p></div>
+    	 {{-- <br/><center><a href="{{url('/')}}"><BUTTON class="ybfbtn">Home</BUTTON></a></center> --}}
+   	<div class="col-md-12">
+	  <div class="col-md-8 col-md-offset-2" style="margin-bottom: 1em">
+        <p><center><strong>Ergon's Classic Car, Truck, Motorcycle & Tractor Show<br/> Saturday, May 20, 2017<br/>9 – 11 a.m.<br/><br/>Setup begins at 9 a.m. and winners will be announced at 11 a.m.</strong></center></p>
+      </div>
+    </div>
 	  {{Form::open(['action' => 'InviteeController@store'])}}
+	    <h3>Invitee Information</h3>
 	    <div class="form-group">
-
+   	      @if($errors->has('invitee_name'))	
+	        {{Form::label('invitee_name', "Please Enter Invitee Full Name", ['class' => 'errs'])}}<br/>
+	        {{Form::text('invitee_name', null, ['class' => 'redform-control', 'placeholder' => "Please Enter Invitee Full Name"])}} 
+	      @else
+	        {{Form::text('invitee_name', null, ['class' => 'form-control', 'placeholder' => "Please Enter Invitee Full Name"])}}
+	      @endif
    	      @if($errors->has('invitee_email'))	
 	        {{Form::label('invitee_email', "Please Enter Invitee Email Address", ['class' => 'errs'])}}<br/>
 	        {{Form::text('invitee_email', null, ['class' => 'redform-control', 'placeholder' => "Please Enter Invitee Email Address"])}} 
 	      @else
-	        {{Form::label('invitee_email', "Invitee Email Address")}}<br/>
 	        {{Form::text('invitee_email', null, ['class' => 'form-control', 'placeholder' => "Please Enter Invitee Email Address"])}}
+	      @endif
+	      <h3>Employee Information</h3>
+	      @if($errors->has('employee_name'))	
+	        {{Form::label('employee_name', "Please Enter Employee Full Name", ['class' => 'errs'])}}<br/>
+	        {{Form::text('employee_name', null, ['class' => 'redform-control', 'placeholder' => "Please Enter Employee Full Name"])}} 
+	      @else
+	        {{Form::text('employee_name', null, ['class' => 'form-control', 'placeholder' => "Please Enter Employee Full Name"])}} 
 	      @endif
 	      @if($errors->has('employee_email'))	
 	        {{Form::label('employee_email', "Please Enter Employee Email Address", ['class' => 'errs'])}}<br/>
 	        {{Form::text('employee_email', null, ['class' => 'redform-control', 'placeholder' => "Please Enter Employee Email Address"])}} 
 	      @else
-	        {{Form::label('employee_email', "Employee Email Address")}}<br/>
 	        {{Form::text('employee_email', null, ['class' => 'form-control', 'placeholder' => "Please Enter Employee Email Address"])}} 
 	      @endif
 	    </div>
