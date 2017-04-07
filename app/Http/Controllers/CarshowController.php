@@ -44,6 +44,7 @@ class CarshowController extends Controller
         $this->validate($request,[
             'first_name' => 'required',
             'last_name' => 'required',
+            'email' => 'required',
             'type' => 'required',
             'year' => 'required',
             'make' => 'required',
