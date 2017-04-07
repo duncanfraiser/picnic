@@ -22,7 +22,7 @@
 	        {{Form::label('invitee_email', "Please Enter Invitee Email Address", ['class' => 'errs'])}}<br/>
 	        {{Form::email('invitee_email', null, ['class' => 'redform-control', 'placeholder' => "Please Enter Invitee Email Address"])}} 
 	      @else
-	        {{Form::text('invitee_email', null, ['class' => 'form-control', 'placeholder' => "Please Enter Invitee Email Address"])}}
+	        {{Form::email('invitee_email', null, ['class' => 'form-control', 'placeholder' => "Please Enter Invitee Email Address"])}}
 	      @endif
 	      <h3>Employee's Information</h3>
 	      @if($errors->has('employee_name'))	
@@ -35,7 +35,7 @@
 	        {{Form::label('employee_email', "Please Enter Employee Email Address", ['class' => 'errs'])}}<br/>
 	        {{Form::email('employee_email', null, ['class' => 'redform-control', 'placeholder' => "Please Enter Employee Email Address"])}} 
 	      @else
-	        {{Form::text('employee_email', null, ['class' => 'form-control', 'placeholder' => "Please Enter Employee Email Address"])}} 
+	        {{Form::email('employee_email', null, ['class' => 'form-control', 'placeholder' => "Please Enter Employee Email Address"])}} 
 	      @endif
 	    </div>
         <div class="form-group" style="float: right">
