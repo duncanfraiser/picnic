@@ -26,7 +26,7 @@
 	      @else
 	        {{Form::text('last_name', null, ['class' => 'form-control', 'placeholder' => "Employee's Last Name"])}}
 	      @endif
-	      {{Form::text('email', null, ['class' => 'form-control', 'placeholder' => "Employee's Email Address"])}}
+	      {{Form::email('email', null, ['class' => 'form-control', 'placeholder' => "Employee's Email Address"])}}
         </div>
 	  <h3>Vehicle Information</h3>
 	    <div class="form-group">

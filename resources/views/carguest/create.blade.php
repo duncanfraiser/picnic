@@ -24,7 +24,7 @@
 	        @else
 	          {{Form::text('last_name', null, ['class' => 'form-control', 'placeholder' => "Last Name"])}}
 	        @endif
-            {{Form::text('email', null, ['class' => 'form-control', 'placeholder' => "Email"])}}
+            {{Form::email('email', null, ['class' => 'form-control', 'placeholder' => "Email"])}}
 
 	      </div>
     	<h3>Spouse/Guest's Information</h3>
