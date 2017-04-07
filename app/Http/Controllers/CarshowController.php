@@ -48,6 +48,7 @@ class CarshowController extends Controller
             'year' => 'required',
             'make' => 'required',
             'model' => 'required',
+            'engine' => 'required',
         ]);
 
         $carshow = New Carshow;

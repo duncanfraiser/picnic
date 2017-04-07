@@ -16,6 +16,7 @@ class Carshow extends Model
             'year',
             'make',
             'model',
+            'engine',
 
         ];
 }

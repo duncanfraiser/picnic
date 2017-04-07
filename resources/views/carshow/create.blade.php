@@ -42,18 +42,24 @@
 	      @else
 	        {{Form::text('year', null, ['class' => 'form-control', 'placeholder' => "Vehicle Year"])}}
 	      @endif
-   	      @if($errors->has('year'))	
+   	      @if($errors->has('make'))	
 	        {{Form::label('make', "Please Enter Vehicle Make", ['class' => 'errs'])}}<br/>
 	        {{Form::text('make', null, ['class' => 'redform-control', 'placeholder' => "Vehicle Make"])}} 
 	      @else
 	    {{Form::text('make', null, ['class' => 'form-control', 'placeholder' => "Vehicle Make"])}}
 	      @endif
-   	      @if($errors->has('year'))	
+   	      @if($errors->has('model'))	
 	        {{Form::label('model', "Please Enter Vehicle Model", ['class' => 'errs'])}}<br/>
 	        {{Form::text('model', null, ['class' => 'redform-control', 'placeholder' => "Vehicle Model"])}} 
 	      @else
 	    {{Form::text('model', null, ['class' => 'form-control', 'placeholder' => "Vehicle Model"])}}
-	      @endif	      
+	      @endif	
+	    @if($errors->has('engine'))	
+	        {{Form::label('engine', "Please Enter Vehicle Engine Type", ['class' => 'errs'])}}<br/>
+	        {{Form::text('engine', null, ['class' => 'redform-control', 'placeholder' => "Vehicle Engine Type"])}} 
+	      @else
+	    {{Form::text('engine', null, ['class' => 'form-control', 'placeholder' => "Vehicle Engine Type"])}}
+	      @endif       
 	    </div>
         <div class="form-group" style="float: right">
           {{Form::submit('Submit', ['class' => 'ybfbtn'])}}

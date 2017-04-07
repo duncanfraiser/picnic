@@ -52,6 +52,7 @@ class CarguestController extends Controller
             'year' => 'required',
             'make' => 'required',
             'model' => 'required',
+            'engine' => 'required',
         ]);
 
         $carguest=new Carguest;

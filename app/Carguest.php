@@ -18,6 +18,7 @@ class Carguest extends Model
             'year',
             'make',
             'model',
+            'engine',
         ];
 
 

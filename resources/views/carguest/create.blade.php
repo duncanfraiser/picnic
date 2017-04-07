@@ -67,6 +67,12 @@
           {{Form::text('model', null, ['class' => 'redform-control', 'placeholder' => "Vehicle Model"])}} 
         @else
       {{Form::text('model', null, ['class' => 'form-control', 'placeholder' => "Vehicle Model"])}}
+        @endif 
+        @if($errors->has('engine')) 
+          {{Form::label('engine', "Please Enter Vehicle Engine Type", ['class' => 'errs'])}}<br/>
+          {{Form::text('engine', null, ['class' => 'redform-control', 'placeholder' => "Vehicle Engine Type"])}} 
+        @else
+      {{Form::text('engine', null, ['class' => 'form-control', 'placeholder' => "Vehicle Engine Type"])}}
         @endif        
       </div>
       <div class="form-group" style="float: right; margin-top: 5em">
