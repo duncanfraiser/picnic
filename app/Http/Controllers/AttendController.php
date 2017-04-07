@@ -39,6 +39,7 @@ class AttendController extends Controller
             'Lampton-Love Companies' => 'Lampton-Love Companies',
             'Magnolia Marine Transport Company' => 'Magnolia Marine Transport Company',
             'Paragon Technical Services, Inc.' => 'Paragon Technical Services, Inc.',
+            'Watson Heidelberg Jones PLLC' => 'Watson Heidelberg Jones PLLC',
         ];
 
 
