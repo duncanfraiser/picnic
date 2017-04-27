@@ -27,9 +27,9 @@ class AttendController extends Controller
     {
         $companies = [
             'Ergon Asphalt & Emulsions, Inc.' => 'Ergon Asphalt & Emulsions, Inc.',
-            'Ergon Biofuels' => 'Ergon Biofuels',
+            'Ergon Biofuels' => 'Ergon Biofuels, LLC',
             'Ergon, Inc.' => 'Ergon, Inc.',
-            'Ergon Maintenance' => 'Ergon Maintenance',
+            'Ergon Maintenance' => 'Ergon Maintenance Services',
             'Ergon Marine & Industrial Supply, Inc.' => 'Ergon Marine & Industrial Supply, Inc.',
             'Ergon Oil Purchasing, Inc.' => 'Ergon Oil Purchasing, Inc.',
             'Ergon Properties, Inc.' => 'Ergon Properties, Inc.',
