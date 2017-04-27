@@ -56,6 +56,7 @@ class AttendController extends Controller
      */
     public function store(Request $request)
     {
+
         $this->validate($request,[
             'first_name' => 'required',
             'last_name' => 'required',
@@ -78,6 +79,8 @@ class AttendController extends Controller
            $kid->save();
           }
         }
+
+ 
         return redirect('/attending/'.$attend->id.'/thanks'); 
     }
 

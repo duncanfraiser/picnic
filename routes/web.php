@@ -32,3 +32,5 @@ Route::get('carshow_guest/{carguest}/thanks', 'CarguestController@thanks');
 
 Route::resource('invitee','InviteeController');
 Route::get('invitee/{invitee}/thanks', 'InviteeController@thanks');
+
+Route::resource('stats','StatsController');
