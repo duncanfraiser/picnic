@@ -26,8 +26,8 @@ class AttendController extends Controller
     public function create()
     {
         $companies = [
-            'Biofuels' => 'Biofuels',
             'Ergon Asphalt & Emulsions, Inc.' => 'Ergon Asphalt & Emulsions, Inc.',
+            'Ergon Biofuels' => 'Ergon Biofuels',
             'Ergon, Inc.' => 'Ergon, Inc.',
             'Ergon Maintenance' => 'Ergon Maintenance',
             'Ergon Marine & Industrial Supply, Inc.' => 'Ergon Marine & Industrial Supply, Inc.',
