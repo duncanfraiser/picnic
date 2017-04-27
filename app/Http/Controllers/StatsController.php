@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Attend;
 use App\Kid;
+use App\Carshow;
+use App\Carguest;
 
 class StatsController extends Controller
 {
@@ -15,13 +17,22 @@ class StatsController extends Controller
      */
     public function index()
     {
+        $kid=Kid::count();
+
         $younger=Kid::where('age','<', '7')->count();
-        $older=Kid::where('age','>', '6')->get();
-        dd($older);
+        $older=Kid::where('age','>', '6')->count();
+        $kidTotal=$younger+$older;
+        
         $attend = Attend::count();
         $guest = Attend::where('guest_first_name','!=','null')->count();
+        $attendTotal=$attend+$guest;
+
+        $total=$kidTotal+$attendTotal;
         
-        return view('stats.index');
+        $carshow=Carshow::count();
+        $carguest=Carguest::count();
+        $carTotal=$carshow+$carguest;
+        return view('stats.index', compact('older', 'younger', 'attend', 'guest','kidTotal','attendTotal','total','carshow','carguest','carTotal'));
     }
 
     /**
