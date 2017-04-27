@@ -35,7 +35,7 @@
       <div class="form-group input_fields_wrap">
         <h3>Children's Information </h3>
         <input class="form-control" placeholder="Child&#39;s Name" type="text" name="kidNames[]"/>
-        <input class="form-control" placeholder="Child&#39;s Age" type="text" name="kidAges[]"/>
+        <input class="form-control" placeholder="Child&#39;s Age" type="number" step="1" name="kidAges[]"/>
         <i class="fa fa-plus-circle fa-2x add_field_button" aria-hidden="true"></i>
       </div>
           <h3>Vehicle Information</h3>
@@ -93,7 +93,7 @@ $(document).ready(function() {
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
             $(wrapper).append(
-            '<div style="padding-top:15px"><input class="form-control" placeholder="Child&#39;s Name" type="text" name="kidNames[]"/><input class="form-control" placeholder="Child&#39;s Age" type="text"  name="kidAges[]"/><a href="#" class="remove_field"><i class="fa fa-minus-circle fa-2x" aria-hidden="true"></i></a><div>'
+            '<div style="padding-top:15px"><input class="form-control" placeholder="Child&#39;s Name" type="text" name="kidNames[]"/><input class="form-control" placeholder="Child&#39;s Age" type="number" step="1" name="kidAges[]"/><a href="#" class="remove_field"><i class="fa fa-minus-circle fa-2x" aria-hidden="true"></i></a><div>'
             ); //add input box
 
         }
