@@ -35,6 +35,11 @@ class StatsController extends Controller
         return view('stats.index', compact('older', 'younger', 'attend', 'guest','kidTotal','attendTotal','total','carshow','carguest','carTotal'));
     }
 
+
+
+
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -42,7 +47,7 @@ class StatsController extends Controller
      */
     public function create()
     {
-        //
+        return view('stats.vehicles');
     }
 
     /**
@@ -100,4 +105,19 @@ class StatsController extends Controller
     {
         //
     }
+
+
+
+
+    public function vehicles()
+    {
+  
+        $carshows=Carshow::orderBy('type')->get();
+        $carguests=Carguest::orderBy('type')->get();
+        return view('stats.vehicles', compact('carshows','carguests'));
+    }
+
+
+
+
 }

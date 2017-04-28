@@ -58,6 +58,9 @@ class CarshowController extends Controller
         // return redirect('/carshow/'.$carshow->id.'/thanks');
     }
 
+
+
+
     /**
      * Display the specified resource.
      *

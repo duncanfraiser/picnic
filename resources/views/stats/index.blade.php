@@ -59,8 +59,19 @@
 
 
 
+<div class="col-md-12"  style="margin: 2em 0 0 0; padding: 0">
+<div class="col-xs-8 col-sm-8 col-md-8" style="padding: 0">
+<h1>Car Show Stats</h1>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4" style="padding: 0"> 
+<a href="{{url('/stats/vehicles')}}"><button class="ybfbtn" style="float: right; margin: 25px 0 10px 0; padding: 0em .5em;
+">More Info</button></a>
+</div>
+</div>
 
-<h1 style="margin-top: 2em">Car Show Stats</h1>
+
+
+
 
 <table>
   <tr>
