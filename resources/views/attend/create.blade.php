@@ -4,9 +4,9 @@
 <div class="col-md-12">
   <div class="col-md-8 col-md-offset-2">
     <img width="100%" src="{{url('img/picnic.jpg')}}">
-    <center><h1>Picnic Registration</h1></center>
-     {{-- <br/><center><a href="{{url('/')}}"><BUTTON class="ybfbtn">Home</BUTTON></a></center> --}}
-	  <div class="col-md-10 col-md-offset-1" style="margin-bottom: 3em">
+    <center><h1>Picnic Registration Closed</h1></center>
+     
+{{-- 	  <div class="col-md-10 col-md-offset-1" style="margin-bottom: 3em">
 	    {{Form::open(['action' => 'AttendController@store'])}}
 	      <h3>Employee's Information</h3>
 	      <div class="form-group">
@@ -44,9 +44,9 @@
         {{Form::submit('Submit', ['class' => 'ybfbtn'])}}
       </div>
       {{Form::close()}}
-     {{--  <a style="float: right" href="{{'/'}}"><BUTTON class="ybfbtn">Cancel</BUTTON></a> --}}
+     
     </div>
-  </div>
+  </div> --}}
 </div>
 </div>
 @endsection
