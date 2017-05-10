@@ -19,8 +19,11 @@ class StatsController extends Controller
     {
         $kid=Kid::count();
 
-        $younger=Kid::where('age','<', '7')->count();
-        $older=Kid::where('age','>', '6')->count();
+// this is more accurate
+      $younger=Kid::whereBetween('age',['1', '6'])->count();
+        // $younger=Kid::where('age','<', '7')->count();
+        // $older=Kid::where('age','>', '6')->count();
+      $older=Kid::whereBetween('age',['7', '17'])->count();
         $kidTotal=$younger+$older;
         
         $attend = Attend::count();
