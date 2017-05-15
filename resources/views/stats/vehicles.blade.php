@@ -5,7 +5,7 @@
 
 
 <h3>Employees</h3>
-<table style="table-layout: fixed;">
+<table style="table-layout: auto;">
   <tr>
     <th>Name</th>
     <th>Email</th>
@@ -29,7 +29,7 @@
 </table>
 
 <h3>Guests</h3>
-<table style="table-layout: fixed;"">
+<table style="table-layout: auto;"">
   <tr>
     <th>Name</th>
     <th>Email</th>
